@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const https = require("https");
 const bodyParser = require("body-parser");
+// ########################
+const cors = require('cors')
+// #######################
 require("dotenv").config();
 
 // Enable CORS for all origins
