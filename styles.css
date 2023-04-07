@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    font-family: "Ubuntu";
+    background-color: #e71bb7;
+    color: #0f17f2;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Lobster", cursive;
+    font-weight: 300;
+    margin-top: 50px;
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 1px 2px white;
+}
+
+#title {
+    background-color: #cae4db;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.col-lg-6 {
+    margin: auto;
+    padding-bottom: 3%;
+}
+
+.title-image {
+    width: 30%;
+}
+
+#content {
+    padding: 7% 15%;
+}
+
+.btn {
+    height: 60%;
+    width: 75%;
+    margin-top: 10%;
+}
+
+.result {
+    background-color: #cae4db;
+    color: #00303f;
+    padding: 5%;
+    text-align: center;
+}
+
+.error-img {
+    width: 30%;
+}
+
