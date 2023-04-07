@@ -4,6 +4,9 @@ const https = require("https");
 const bodyParser = require("body-parser");
 require("dotenv").config();
 
+// Enable CORS for all origins
+app.use(cors())
+
 app.use(bodyParser.urlencoded({ extended: true }));//necessary code to start parsing through body
 app.use(express.static(__dirname)); //very important for including css file
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
