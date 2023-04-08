@@ -32,9 +32,9 @@ app.post("/", function (req, res) {
     // ##########################################
     const query = req.body.cityName;
     console.log(query);
-    const apiKey = process.env.apiKey;
+    const apiKeyWeather = process.env.apiKeyWeather;
     const units = "metric";
-    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + units;
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKeyWeather + "&units=" + units;
 
     //here is an use of a https npm module
     https.get(url, function (response) {
