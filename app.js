@@ -29,12 +29,12 @@ app.get("/", function (req, res) {
 
 //This is all the back end that will happen in the server in order to fetch the data from the API and send it back to our website
 app.post("/", function (req, res) {
-    console.log(req.body.cityName);
+    
 
 
     // ##########################################
     const query = req.body.cityName;
-    console.log(query);
+    
     const apiKeyWeather = process.env.apiKeyWeather;
     const units = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKeyWeather + "&units=" + units;
@@ -51,6 +51,7 @@ app.post("/", function (req, res) {
                 const temperature = weatherData.main.temp;
                 const description = weatherData.weather[0].description;
                 const icon = weatherData.weather[0].icon;
+                console.log(icon);
                 res.write(`<!DOCTYPE html>
               <html lang="en">
               <head>
